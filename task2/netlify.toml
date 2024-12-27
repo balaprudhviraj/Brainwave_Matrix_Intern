@@ -1,0 +1,12 @@
+[build]
+  publish = "build" # or your output directory
+  command = "npm run build"
+
+[build.environment]
+  NODE_VERSION = "18" # or your version
+
+[build.processing]
+  skip_processing = true
+
+[caching]
+  paths = ["node_modules/**", "build/**"]
